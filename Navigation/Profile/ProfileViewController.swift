@@ -11,15 +11,34 @@ class ProfileViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .lightGray
-        self.title = "Profile"
+        title = "Профиль"
+        
         let profileHeaderView = ProfileHeaderView()
-        profileHeaderView.translatesAutoresizingMaskIntoConstraints = false
-        self.view.addSubview(profileHeaderView)
+        view.backgroundColor = .lightGray
+        view.addSubview(profileHeaderView)
+        profileHeaderView.setupView()
+        
+        let titleButton = UIButton()
+        titleButton.translatesAutoresizingMaskIntoConstraints = false
+        titleButton.backgroundColor = .blue
+        titleButton.setTitle("Новый заголовок", for: .normal)
+        
+        view.addSubview(titleButton)
+        
+        titleButton.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
+        titleButton.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
+        titleButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
+        titleButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        titleButton.setTitleColor(.white, for: .highlighted)
+        titleButton.addTarget(self, action: #selector(setNewTitle), for: .touchUpInside)
+        
     }
     
-    override func viewWillLayoutSubviews() {
-        self.view.subviews.first?.frame = self.view.frame
-        
+    @objc func setNewTitle() {
+        if title == "Профиль" {
+            title = "Брэдд Питт"
+        } else {
+            title = "Профиль"
+        }
     }
 }
