@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		951A099327D627450028FE11 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951A099227D627440028FE11 /* ProfileHeaderView.swift */; };
+
 		95263D5F27C2233500FA9131 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95263D5E27C2233500FA9131 /* AppDelegate.swift */; };
 		95263D6127C2233500FA9131 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95263D6027C2233500FA9131 /* SceneDelegate.swift */; };
 		95263D6327C2233500FA9131 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95263D6227C2233500FA9131 /* ViewController.swift */; };
@@ -21,7 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		951A099227D627440028FE11 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
+
 		95263D5B27C2233500FA9131 /* Navigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Navigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95263D5E27C2233500FA9131 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95263D6027C2233500FA9131 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,26 +47,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		951A099127D626FA0028FE11 /* Profile */ = {
-			isa = PBXGroup;
-			children = (
-				951A099227D627440028FE11 /* ProfileHeaderView.swift */,
-				95263D7427C2259A00FA9131 /* ProfileViewController.swift */,
+
 			);
 			path = Profile;
 			sourceTree = "<group>";
 		};
-		95263D5227C2233500FA9131 = {
-			isa = PBXGroup;
-			children = (
-				95263D5D27C2233500FA9131 /* Navigation */,
-				95263D5C27C2233500FA9131 /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		95263D5C27C2233500FA9131 /* Products */ = {
-			isa = PBXGroup;
-			children = (
+
 				95263D5B27C2233500FA9131 /* Navigation.app */,
 			);
 			name = Products;
@@ -81,7 +67,7 @@
 				95263D7227C2258400FA9131 /* FeedViewController.swift */,
 				95263D5E27C2233500FA9131 /* AppDelegate.swift */,
 				95263D6027C2233500FA9131 /* SceneDelegate.swift */,
-				951A099127D626FA0028FE11 /* Profile */,
+
 				95263D6227C2233500FA9131 /* ViewController.swift */,
 				95263D6727C2233600FA9131 /* Assets.xcassets */,
 				95263D6927C2233600FA9131 /* LaunchScreen.storyboard */,
@@ -164,7 +150,7 @@
 				95263D6327C2233500FA9131 /* ViewController.swift in Sources */,
 				95263D5F27C2233500FA9131 /* AppDelegate.swift in Sources */,
 				95263D7527C2259A00FA9131 /* ProfileViewController.swift in Sources */,
-				951A099327D627450028FE11 /* ProfileHeaderView.swift in Sources */,
+
 				95263D7327C2258400FA9131 /* FeedViewController.swift in Sources */,
 				95263D7927C2291D00FA9131 /* Post.swift in Sources */,
 				95263D7B27C229BA00FA9131 /* InfoViewController.swift in Sources */,
