@@ -9,14 +9,14 @@ import UIKit
 
 class FeedViewController: UIViewController {
 
-    let post = Post(title: "First post")
-
+//    let post = Post(title: "First post")
+let post = Post(author: "asd", description: "asd", image: "dfh", likes: 9, views: 31)
         var postButton = UIButton()
 
        @objc func openPost() {
             let postVC = PostViewController()
             navigationController?.pushViewController(postVC, animated: true)
-        postVC.postTitle = post.title
+           postVC.postTitle = post.author
         }
 
         override func viewDidLoad() {
