@@ -13,7 +13,6 @@ class FeedViewController: UIViewController {
 
         var postButton = UIButton()
        
-        // метод для кнопки
        @objc func openPost() {
             let postVC = PostViewController()
             navigationController?.pushViewController(postVC, animated: true)
